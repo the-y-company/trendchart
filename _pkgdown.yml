@@ -1,0 +1,7 @@
+url: ~
+template:
+  bootstrap: 5
+  bootswatch: litera
+  includes:
+    in_header: 
+      <script src="../trendchart.js"></script>

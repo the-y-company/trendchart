@@ -1,0 +1,185 @@
+---
+title: "Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Basics
+
+```{r, echo = FALSE}
+library(trendchart)
+```
+
+```{r, results = 'asis'}
+trend_line(sample(1:10), style = "width: 100%")
+```
+
+```{r, results = 'asis'}
+trend_bar(sample(1:10), style = "width:100%;height:10rem;")
+```
+
+```{r, results = 'asis'}
+trend_column(sample(1:10), style = "width: 100%")
+```
+
+```{r, results = 'asis'}
+trend_pie(
+  sample(1:3), 
+  style = style(
+    "--shape-color-1" = "#597BFC",
+    "--shape-color-2" = "#e2445c",
+    "--shape-color-3" = "#9CD326"
+  )
+)
+```
+
+## Line
+
+```{r, results = 'asis'}
+trend_line(
+  sample(1:30), 
+  min = 0,
+  style = style(
+    width = "100%",
+    "--area-opacity" = .15
+  )
+)
+```
+
+```{r, results = 'asis'}
+trend_line(
+  sample(-15:10), 
+  min = 0,
+  style = style(
+    width = "100%",
+    "--area-opacity" = .15,
+    "--shape-color" = "#784BD1"
+  )
+)
+```
+
+```{r, results = 'asis'}
+trend_line(
+  -sample(1:20), 
+  min = 0,
+  style = style(
+    width = "100%",
+    "--area-opacity" = .15,
+    "--shape-color" = "#e2445c"
+  )
+)
+```
+
+## Column
+
+```{r, results = 'asis'}
+trend_column(
+  sample(1:20), 
+  style = style(
+    width = "100%",
+    "--area-opacity" = .15
+  )
+)
+```
+
+```{r, results = 'asis'}
+trend_column(
+  -sample(1:20), 
+  style = style(
+    width = "100%",
+    "--shape-color" = "#e2445c"
+  )
+)
+```
+
+```{r, results = 'asis'}
+trend_column(
+  sample(1:30), 
+  style = style(
+    width = "100%",
+    "--shape-gap" = 0
+  )
+)
+```
+
+```{r, results = 'asis'}
+trend_column(
+  sample(1:20), 
+  `shape-radius` = 10,
+  style = style(
+    width = "100%"
+  )
+)
+```
+
+## Advanced
+
+```{r, results = 'asis'}
+htmltools::div(
+  style = "background-color:#7346d3;border-radius:1rem;color:white;",
+  htmltools::div(
+    style = "padding:1rem;",
+    htmltools::h4(415),
+    htmltools::p("Number of views (30 days)"),
+  ),
+  trend_line(
+    sample(1:20), 
+    min = 0L,
+    style = style(
+      width = "100%",
+      "--shape-opacity" = .15,
+      "--shape-color" = "#fff"
+    )
+  )
+)
+```
+
+```{r, results = 'asis'}
+htmltools::div(
+  style = "background-color:#0376EE;border-radius:1rem;color:white;text-align:center;",
+  htmltools::div(
+    style = "padding:1rem;",
+    htmltools::h4(415),
+    htmltools::p("Number of views (30 days)"),
+  ),
+  trend_column(
+    sample(1:15), 
+    min = 0,
+    style = style(
+      width = "100%",
+      height = "7rem",
+      "--shape-opacity" = .15,
+      "--shape-color" = "#fff"
+    )
+  )
+)
+```
+
+```{r, results = 'asis'}
+htmltools::div(
+  style = "position:relative;width:5rem",
+  trend_pie(
+    75,
+    min = 0,
+    max = 100,
+    `shape-size` = 6,
+    style = style(
+      "--shape-color" = "#F17A33"
+    )
+  ),
+  htmltools::tags$i(
+    class = "fa fa-user",
+    style = "position:absolute;top:30%;left:30%;width:40%;color:#F17A33;"
+  )
+)
+```

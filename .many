@@ -1,0 +1,22 @@
+{
+  "src": {
+    "srcpkg/charts/bar.R": "00826753dc5fed33b8f89820e139ceb4",
+    "srcpkg/charts/column.R": "89d338a642869b8eb52eb0e1622d8100",
+    "srcpkg/charts/line.R": "d32c67d685336c2b28cd09f6391128f0",
+    "srcpkg/charts/pie.R": "3804605762180981a973e6665cfbff6e",
+    "srcpkg/css.R": "98d9f5ee619093491b72e15835e04813",
+    "srcpkg/dependency.R": "642aadb738fde852add5692c5a529522",
+    "srcpkg/docs.R": "ad968f194cc69b5032cf097f59f5c97f",
+    "srcpkg/utils.R": "f6d254040207a3e7b2fd1b3b79b1ec22"
+  },
+  "dst": {
+    "R/charts-bar.R": "00826753dc5fed33b8f89820e139ceb4",
+    "R/charts-column.R": "89d338a642869b8eb52eb0e1622d8100",
+    "R/charts-line.R": "d32c67d685336c2b28cd09f6391128f0",
+    "R/charts-pie.R": "3804605762180981a973e6665cfbff6e",
+    "R/css.R": "98d9f5ee619093491b72e15835e04813",
+    "R/dependency.R": "642aadb738fde852add5692c5a529522",
+    "R/docs.R": "ad968f194cc69b5032cf097f59f5c97f",
+    "R/utils.R": "f6d254040207a3e7b2fd1b3b79b1ec22"
+  }
+}
