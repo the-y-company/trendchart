@@ -12,6 +12,8 @@ Small, simple [trendchart](https://github.com/WebLogin/trendchart-elements) for 
 remotes::install_github("the-y-company/trendchart")
 ```
 
+## Example
+
 ``` r
 trendchart::trend_line(sample(1:100))
 ```

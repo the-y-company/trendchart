@@ -183,3 +183,64 @@ htmltools::div(
   )
 )
 ```
+
+```{r, results = 'asis'}
+box <- function(
+  title,
+  value,
+  img,
+  colour
+){
+  htmltools::div(
+    class = "d-flex",
+    htmltools::div(
+      class = "flex-shrink-1 me-2",
+      htmltools::tags$img(
+        src = img,
+        style = "width:3rem;"
+      )
+    ),
+    htmltools::div(
+      class = "flex-grow-1",
+      htmltools::p(title, class = "m-0"),
+      trendchart::trend_bar(
+        value,
+        min = 0,
+        max = 100,
+        `shape-radius` = 4,
+        `shape-gap` = 0,
+        tooltip = "@V%",
+        style = style(
+          width = "100%",
+          height = "1rem",
+          "--shape-color" = colour,
+          "--area-opacity" = 0.15,
+          "--area-color" = "black"
+        )
+      )
+    )
+  )
+}
+
+htmltools::div(
+  box(
+    "The Y Company",
+    73,
+    "https://github.com/the-y-company.png",
+    "#264653"
+  ),
+  box(
+    "John Coene",
+    42,
+    "https://the-y-company.com/assets/img/team/john_coene.webp",
+    "#e76f51"
+  ),
+  box(
+    "Pierre Saouter",
+    56,
+    "https://the-y-company.com/assets/img/team/pierre.png",
+    "#2a9d8f"
+  )
+)
+```
+

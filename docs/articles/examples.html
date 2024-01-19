@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">trendchart</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
 
 
 
-<script src="examples_files/trendchart-0.0.0.9000/trendchart.js"></script><div class="row">
+<script src="examples_files/trendchart-0.0.1.9000/trendchart.js"></script><div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Examples</h1>
             
@@ -74,11 +74,11 @@
 </h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_line.html">trend_line</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span>, style <span class="op">=</span> <span class="st">"width: 100%"</span><span class="op">)</span></span></code></pre></div>
-<tc-line values="[3,2,9,7,5,4,10,1,8,6]" style="width: 100%"></tc-line><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<tc-line values="[8,2,9,10,3,5,1,7,4,6]" style="width: 100%"></tc-line><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_bar.html">trend_bar</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span>, style <span class="op">=</span> <span class="st">"width:100%;height:10rem;"</span><span class="op">)</span></span></code></pre></div>
-<tc-bar values="[5,9,4,1,2,8,3,7,6,10]" style="width:100%;height:10rem;"></tc-bar><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<tc-bar values="[2,4,3,6,10,7,1,5,9,8]" style="width:100%;height:10rem;"></tc-bar><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_column.html">trend_column</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span>, style <span class="op">=</span> <span class="st">"width: 100%"</span><span class="op">)</span></span></code></pre></div>
-<tc-column values="[3,6,4,5,10,9,8,2,1,7]" style="width: 100%"></tc-column><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<tc-column values="[4,9,5,2,7,8,3,6,10,1]" style="width: 100%"></tc-column><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_pie.html">trend_pie</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span>, </span>
 <span>  style <span class="op">=</span> <span class="fu"><a href="../reference/style.html">style</a></span><span class="op">(</span></span>
@@ -87,7 +87,7 @@
 <span>    <span class="st">"--shape-color-3"</span> <span class="op">=</span> <span class="st">"#9CD326"</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-pie values="[3,1,2]" style="--shape-color-1:#597BFC;--shape-color-2:#e2445c;--shape-color-3:#9CD326"></tc-pie>
+<tc-pie values="[1,2,3]" style="--shape-color-1:#597BFC;--shape-color-2:#e2445c;--shape-color-3:#9CD326"></tc-pie>
 </div>
 <div class="section level2">
 <h2 id="line">Line<a class="anchor" aria-label="anchor" href="#line"></a>
@@ -101,7 +101,7 @@
 <span>    <span class="st">"--area-opacity"</span> <span class="op">=</span> <span class="fl">.15</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-line values="[20,6,21,4,1,18,9,15,26,10,22,29,25,3,11,17,12,16,28,7,2,30,19,27,24,14,13,23,5,8]" min="0" style="width:100%;--area-opacity:0.15"></tc-line><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<tc-line values="[9,13,3,2,26,1,29,30,10,23,19,24,28,17,15,14,20,18,21,12,22,5,8,25,4,7,11,6,16,27]" min="0" style="width:100%;--area-opacity:0.15"></tc-line><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_line.html">trend_line</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="op">-</span><span class="fl">15</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span>, </span>
 <span>  min <span class="op">=</span> <span class="fl">0</span>,</span>
@@ -111,7 +111,7 @@
 <span>    <span class="st">"--shape-color"</span> <span class="op">=</span> <span class="st">"#784BD1"</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-line values="[-11,-5,-1,6,3,-15,8,9,-4,-3,2,5,7,0,4,-7,-10,-9,-12,-2,-6,-13,-14,1,-8,10]" min="0" style="width:100%;--area-opacity:0.15;--shape-color:#784BD1"></tc-line><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<tc-line values="[-10,4,0,-8,8,-6,3,2,-15,5,-3,10,-4,1,-11,-12,-2,-9,6,7,-14,-1,9,-13,-5,-7]" min="0" style="width:100%;--area-opacity:0.15;--shape-color:#784BD1"></tc-line><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_line.html">trend_line</a></span><span class="op">(</span></span>
 <span>  <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span>, </span>
 <span>  min <span class="op">=</span> <span class="fl">0</span>,</span>
@@ -121,7 +121,7 @@
 <span>    <span class="st">"--shape-color"</span> <span class="op">=</span> <span class="st">"#e2445c"</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-line values="[-15,-6,-20,-18,-1,-7,-11,-14,-5,-19,-17,-4,-13,-10,-3,-16,-9,-8,-12,-2]" min="0" style="width:100%;--area-opacity:0.15;--shape-color:#e2445c"></tc-line>
+<tc-line values="[-17,-7,-15,-18,-8,-10,-9,-6,-20,-19,-16,-11,-4,-3,-5,-12,-13,-14,-2,-1]" min="0" style="width:100%;--area-opacity:0.15;--shape-color:#e2445c"></tc-line>
 </div>
 <div class="section level2">
 <h2 id="column">Column<a class="anchor" aria-label="anchor" href="#column"></a>
@@ -134,7 +134,7 @@
 <span>    <span class="st">"--area-opacity"</span> <span class="op">=</span> <span class="fl">.15</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-column values="[1,19,2,4,9,11,16,6,10,18,20,8,12,13,3,14,5,7,17,15]" style="width:100%;--area-opacity:0.15"></tc-column><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<tc-column values="[12,13,15,7,4,18,10,17,2,6,20,5,11,8,9,16,19,14,3,1]" style="width:100%;--area-opacity:0.15"></tc-column><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_column.html">trend_column</a></span><span class="op">(</span></span>
 <span>  <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span>, </span>
 <span>  style <span class="op">=</span> <span class="fu"><a href="../reference/style.html">style</a></span><span class="op">(</span></span>
@@ -142,7 +142,7 @@
 <span>    <span class="st">"--shape-color"</span> <span class="op">=</span> <span class="st">"#e2445c"</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-column values="[-6,-7,-3,-10,-13,-14,-11,-8,-12,-9,-19,-15,-16,-17,-2,-5,-1,-4,-18,-20]" style="width:100%;--shape-color:#e2445c"></tc-column><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<tc-column values="[-14,-12,-3,-1,-17,-18,-5,-7,-2,-6,-8,-9,-10,-20,-16,-11,-4,-13,-15,-19]" style="width:100%;--shape-color:#e2445c"></tc-column><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_column.html">trend_column</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">30</span><span class="op">)</span>, </span>
 <span>  style <span class="op">=</span> <span class="fu"><a href="../reference/style.html">style</a></span><span class="op">(</span></span>
@@ -150,7 +150,7 @@
 <span>    <span class="st">"--shape-gap"</span> <span class="op">=</span> <span class="fl">0</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-column values="[11,20,1,4,13,29,30,26,22,10,17,7,18,15,5,28,12,3,8,19,21,24,6,2,25,9,27,16,14,23]" style="width:100%;--shape-gap:0"></tc-column><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<tc-column values="[20,14,12,24,28,17,13,10,3,29,22,18,8,7,5,16,30,11,26,9,4,25,2,15,19,27,23,1,6,21]" style="width:100%;--shape-gap:0"></tc-column><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/trend_column.html">trend_column</a></span><span class="op">(</span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span><span class="op">)</span>, </span>
 <span>  `shape-radius` <span class="op">=</span> <span class="fl">10</span>,</span>
@@ -158,7 +158,7 @@
 <span>    width <span class="op">=</span> <span class="st">"100%"</span></span>
 <span>  <span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<tc-column values="[6,11,13,7,17,10,1,9,8,16,14,20,5,19,18,15,12,2,4,3]" shape-radius="10" style="width:100%"></tc-column>
+<tc-column values="[11,13,2,6,20,1,5,4,14,7,9,3,16,19,17,8,12,15,18,10]" shape-radius="10" style="width:100%"></tc-column>
 </div>
 <div class="section level2">
 <h2 id="advanced">Advanced<a class="anchor" aria-label="anchor" href="#advanced"></a>
@@ -186,7 +186,7 @@
 <h4>415</h4>
 <p>Number of views (30 days)</p>
 </div>
-<tc-line values="[17,3,9,19,5,2,15,4,18,20,1,11,14,16,12,13,6,8,7,10]" min="0" style="width:100%;--shape-opacity:0.15;--shape-color:#fff"></tc-line>
+<tc-line values="[10,20,2,3,14,19,4,7,17,9,16,13,6,11,5,12,15,1,8,18]" min="0" style="width:100%;--shape-opacity:0.15;--shape-color:#fff"></tc-line>
 </div>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
@@ -212,7 +212,7 @@
 <h4>415</h4>
 <p>Number of views (30 days)</p>
 </div>
-<tc-column values="[11,7,4,10,2,1,12,6,3,5,13,8,15,9,14]" min="0" style="width:100%;height:7rem;--shape-opacity:0.15;--shape-color:#fff"></tc-column>
+<tc-column values="[2,10,4,14,13,12,11,9,15,6,1,5,8,3,7]" min="0" style="width:100%;height:7rem;--shape-opacity:0.15;--shape-color:#fff"></tc-column>
 </div>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
@@ -234,6 +234,93 @@
 <div style="position:relative;width:5rem">
 <tc-pie values="[75]" min="0" max="100" shape-size="6" style="--shape-color:#F17A33"></tc-pie><i class="fa fa-user" style="position:absolute;top:30%;left:30%;width:40%;color:#F17A33;"></i>
 </div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">box</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span></span>
+<span>  <span class="va">title</span>,</span>
+<span>  <span class="va">value</span>,</span>
+<span>  <span class="va">img</span>,</span>
+<span>  <span class="va">colour</span></span>
+<span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
+<span>    class <span class="op">=</span> <span class="st">"d-flex"</span>,</span>
+<span>    <span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
+<span>      class <span class="op">=</span> <span class="st">"flex-shrink-1 me-2"</span>,</span>
+<span>      <span class="fu">htmltools</span><span class="fu">::</span><span class="va"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">tags</a></span><span class="op">$</span><span class="fu">img</span><span class="op">(</span></span>
+<span>        src <span class="op">=</span> <span class="va">img</span>,</span>
+<span>        style <span class="op">=</span> <span class="st">"width:3rem;"</span></span>
+<span>      <span class="op">)</span></span>
+<span>    <span class="op">)</span>,</span>
+<span>    <span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
+<span>      class <span class="op">=</span> <span class="st">"flex-grow-1"</span>,</span>
+<span>      <span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">p</a></span><span class="op">(</span><span class="va">title</span>, class <span class="op">=</span> <span class="st">"m-0"</span><span class="op">)</span>,</span>
+<span>      <span class="fu">trendchart</span><span class="fu">::</span><span class="fu"><a href="../reference/trend_bar.html">trend_bar</a></span><span class="op">(</span></span>
+<span>        <span class="va">value</span>,</span>
+<span>        min <span class="op">=</span> <span class="fl">0</span>,</span>
+<span>        max <span class="op">=</span> <span class="fl">100</span>,</span>
+<span>        `shape-radius` <span class="op">=</span> <span class="fl">4</span>,</span>
+<span>        `shape-gap` <span class="op">=</span> <span class="fl">0</span>,</span>
+<span>        tooltip <span class="op">=</span> <span class="st">"@V%"</span>,</span>
+<span>        style <span class="op">=</span> <span class="fu"><a href="../reference/style.html">style</a></span><span class="op">(</span></span>
+<span>          width <span class="op">=</span> <span class="st">"100%"</span>,</span>
+<span>          height <span class="op">=</span> <span class="st">"1rem"</span>,</span>
+<span>          <span class="st">"--shape-color"</span> <span class="op">=</span> <span class="va">colour</span>,</span>
+<span>          <span class="st">"--area-opacity"</span> <span class="op">=</span> <span class="fl">0.15</span>,</span>
+<span>          <span class="st">"--area-color"</span> <span class="op">=</span> <span class="st">"black"</span></span>
+<span>        <span class="op">)</span></span>
+<span>      <span class="op">)</span></span>
+<span>    <span class="op">)</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu">htmltools</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/htmltools/reference/builder.html" class="external-link">div</a></span><span class="op">(</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/box.html" class="external-link">box</a></span><span class="op">(</span></span>
+<span>    <span class="st">"The Y Company"</span>,</span>
+<span>    <span class="fl">73</span>,</span>
+<span>    <span class="st">"https://github.com/the-y-company.png"</span>,</span>
+<span>    <span class="st">"#264653"</span></span>
+<span>  <span class="op">)</span>,</span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/box.html" class="external-link">box</a></span><span class="op">(</span></span>
+<span>    <span class="st">"John Coene"</span>,</span>
+<span>    <span class="fl">42</span>,</span>
+<span>    <span class="st">"https://the-y-company.com/assets/img/team/john_coene.webp"</span>,</span>
+<span>    <span class="st">"#e76f51"</span></span>
+<span>  <span class="op">)</span>,</span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/graphics/box.html" class="external-link">box</a></span><span class="op">(</span></span>
+<span>    <span class="st">"Pierre Saouter"</span>,</span>
+<span>    <span class="fl">56</span>,</span>
+<span>    <span class="st">"https://the-y-company.com/assets/img/team/pierre.png"</span>,</span>
+<span>    <span class="st">"#2a9d8f"</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<div>
+<div class="d-flex">
+<div class="flex-shrink-1 me-2">
+<img src="https://github.com/the-y-company.png" style="width:3rem;">
+</div>
+<div class="flex-grow-1">
+<p class="m-0">The Y Company</p>
+<tc-bar values="[73]" min="0" max="100" shape-radius="4" shape-gap="0" tooltip="@V%" style="width:100%;height:1rem;--shape-color:#264653;--area-opacity:0.15;--area-color:black"></tc-bar>
+</div>
+</div>
+<div class="d-flex">
+<div class="flex-shrink-1 me-2">
+<img src="https://the-y-company.com/assets/img/team/john_coene.webp" style="width:3rem;">
+</div>
+<div class="flex-grow-1">
+<p class="m-0">John Coene</p>
+<tc-bar values="[42]" min="0" max="100" shape-radius="4" shape-gap="0" tooltip="@V%" style="width:100%;height:1rem;--shape-color:#e76f51;--area-opacity:0.15;--area-color:black"></tc-bar>
+</div>
+</div>
+<div class="d-flex">
+<div class="flex-shrink-1 me-2">
+<img src="https://the-y-company.com/assets/img/team/pierre.png" style="width:3rem;">
+</div>
+<div class="flex-grow-1">
+<p class="m-0">Pierre Saouter</p>
+<tc-bar values="[56]" min="0" max="100" shape-radius="4" shape-gap="0" tooltip="@V%" style="width:100%;height:1rem;--shape-color:#2a9d8f;--area-opacity:0.15;--area-color:black"></tc-bar>
+</div>
+</div>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
@@ -243,7 +330,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by First Last.</p>
+<p>Developed by John Coene, Y.</p>
 </div>
 
 <div class="pkgdown-footer-right">

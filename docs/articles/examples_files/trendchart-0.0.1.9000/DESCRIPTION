@@ -16,11 +16,10 @@ License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports:
-  jsonlite,
-  htmltools
-Suggests: 
-    knitr,
-    many,
-    rmarkdown
+Imports: jsonlite, htmltools
+Suggests: knitr, many, rmarkdown
 VignetteBuilder: knitr
+Author: John Coene [aut, cre],
+  Y [cph, fnd]
+Maintainer: John Coene <john@the-y-company.com>
+Built: R 4.3.2; ; 2024-01-19 19:12:48 UTC; unix
