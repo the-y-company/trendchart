@@ -244,3 +244,20 @@ htmltools::div(
 )
 ```
 
+```{r}
+iris |>
+  dplyr::group_by(Species) |>
+  dplyr::summarise(
+    length = sum(Sepal.Length),
+    plot = trend_column(
+      values = Sepal.Width,
+      style = style(
+        width = "100%"
+      )
+    ) |> 
+      as.character()
+  ) |>
+  DT::datatable(escape = FALSE)
+```
+
+

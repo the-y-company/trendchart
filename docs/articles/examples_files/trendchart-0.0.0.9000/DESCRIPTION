@@ -12,6 +12,8 @@ RoxygenNote: 7.2.3
 Imports: jsonlite, htmltools
 Suggests: knitr, many, rmarkdown
 VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-01-11 00:40:15 UTC; john
 Author: First Last [aut, cre] (YOUR-ORCID-ID)
 Maintainer: First Last <first.last@example.com>
-Built: R 4.3.2; ; 2024-01-11 00:41:35 UTC; unix
+Built: R 4.3.2; ; 2024-01-11 00:40:16 UTC; unix
